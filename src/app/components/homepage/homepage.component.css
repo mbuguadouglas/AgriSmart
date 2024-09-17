@@ -1,70 +1,35 @@
-:host {
+/* :host {
   display: block;
-}
+} */
 
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #E8F5E9; /* Light Green */
-  color: #4CAF50; /* Primary Green */
+  color: #333; /* Dark Text for Readability */
   overflow-x: hidden;
 }
 
-/* Cariousel */
-.carousel {
-  position: relative;
+/* Single Image Section */
+.single-image {
   width: 100%;
-  height: 60vh;
-  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  /* background-color: #e8f4f1; Light Green Tint */
 }
 
-.carousel-images {
-  display: flex;
-  transition: transform 0.5s ease;
-  width: 100%;
+.single-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.carousel-images div {
-  min-width: 100%;
-}
-
-.carousel-images img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-button {
-  position: absolute;
-  top: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 15px;
-  font-size: 2em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
 
 /* Hero Section */
 .hero-section {
   width: 100%;
   height: 40vh;
-  background: rgba(255, 255, 255, 0.5); /* Slight overlay to enhance text visibility */
+  /* background: linear-gradient(to bottom right, #4caf50, #2e7d32); Warm Green Gradient */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,25 +40,25 @@ button:hover {
 }
 
 .hero-content {
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
-  background-color: #2a7b08ed;
-  padding: 20px;
-  border-radius: 10px;
+  background: rgba(21, 73, 11, 0.4);
+  padding: 30px;
+  border-radius: 15px;
 }
 
 .hero-title {
   font-size: 3em;
   font-weight: bold;
   margin: 0;
+  line-height: 1.2;
 }
 
 .hero-tagline {
   font-size: 1.5em;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .cta-button {
-  background-color: #66BB6A; /* Bright Green */
+  background-color: #66bb6a; /* Bright Green Button */
   color: white;
   padding: 15px 30px;
   text-decoration: none;
@@ -103,7 +68,7 @@ button:hover {
 }
 
 .cta-button:hover {
-  background-color: #4CAF50; /* Primary Green */
+  background-color: #4caf50; /* Darker Green on Hover */
   transform: scale(1.05);
 }
 
@@ -111,20 +76,21 @@ button:hover {
 .mission-section {
   padding: 40px 20px;
   text-align: center;
-  background-color: #d8f1da79; /* Light Yellow */
-  max-width: 1200px;
+  background-color: #d2dbd2; /* Very Light Green */
+  max-width: 1000px;
   margin: 20px auto;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .mission-title {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #2e7d32; /* Dark Green */
 }
 
 .mission-text {
   font-size: 1.2em;
-  color: #6D4C41; /* Deep Earthy Brown */
+  color: #555; /* Dark Gray for Text */
 }
 
 /* Features Section */
@@ -133,24 +99,24 @@ button:hover {
   flex-wrap: wrap;
   justify-content: center;
   padding: 40px 20px;
-  /* background-color: #4CAF50; */
-  color: white;
+  background: rgba(194, 211, 191, 0.4);
 }
 
 .feature-item {
   text-align: center;
   max-width: 300px;
-  flex: 1 1 280px; /* Responsive flex-basis */
+  flex: 1 1 280px;
   padding: 20px;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.2); /* Slight dark background for each feature */
+  border-radius: 15px;
+  background: #dfe5e1; /* White Background */
   margin: 10px;
-  background-color: #8ab36eb4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light Shadow */
 }
 
 .feature-icon {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #4caf50; /* Green Icon Color */
 }
 
 .feature-title {
@@ -165,8 +131,8 @@ button:hover {
 /* Footer */
 .footer {
   width: 100%;
-  background-color: #071f09b9;
-  color: white;
+  background-color: #ecefec00; /* Dark Green */
+  color: rgb(48, 5, 5);
   padding: 20px;
   text-align: center;
 }
@@ -176,7 +142,7 @@ button:hover {
 }
 
 .social-icons a {
-  color: white;
+  color: rgb(53, 36, 36);
   margin: 0 10px;
   font-size: 1.5em;
   text-decoration: none;
@@ -184,7 +150,7 @@ button:hover {
 }
 
 .social-icons a:hover {
-  color: #66BB6A; /* Bright Green */
+  color: #66bb6a; /* Bright Green for Hover */
 }
 
 /* Responsive Styles */

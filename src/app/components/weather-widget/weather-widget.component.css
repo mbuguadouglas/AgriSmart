@@ -1,5 +1,5 @@
 .weather-widget {
-  background: linear-gradient(to bottom, #e0f7fa, #9fe6f0); /* Light blue gradient for a sky-like effect */
+  background: linear-gradient(to bottom, #e0f7fa, #b9cccf); 
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -19,7 +19,7 @@
   /* background: url('') no-repeat center center; Background image for added texture */
   background-size: cover;
   opacity: 0.2; /* Slightly visible background image */
-  z-index: -1; /* Place behind the content */
+  z-index: -1; /* Place -behind the content */
 }
 
 .weather-widget h3 {
@@ -57,7 +57,7 @@
 .condition {
   display: block;
   font-size: 1rem;
-  color: #e0f7fa;
+  color: #d0d8d9;
 }
 
 .forecast {

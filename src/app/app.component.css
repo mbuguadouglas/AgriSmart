@@ -25,10 +25,9 @@
 
 /* Main Content Area */
 .main-content {
-    margin-top: 80px; /* Adjust according to header height */
     padding: 20px;
     transition: margin-left 0.3s ease;
-    background-color: #f9f9f9; /* Light background for the content area */
+    background-color: #cfd7d4; /* Light background for the content area */
     min-height: calc(100vh - 80px); /* Ensure content area covers full height */
 }
 
