@@ -1,0 +1,30 @@
+.
+├── database
+│   ├── storedProcedures
+│   │   └── users
+│   │       ├── addUser.sql
+│   │       ├── deleteUser.sql
+│   │       ├── getUserByEmail.sql
+│   │       ├── getUserById.sql
+│   │       ├── getUsers.sql
+│   │       └── updateUser.sql
+│   └── tables
+│       └── users.sql
+├── node_modules  [190 entries exceeds filelimit, not opening dir]
+├── package.json
+├── package-lock.json
+├── src
+│   ├── api-v1
+│   │   ├── controllers
+│   │   ├── databaseHelpers
+│   │   ├── middleware
+│   │   ├── models
+│   │   ├── routes
+│   │   └── validators
+│   ├── config
+│   │   └── index.ts
+│   └── server.ts
+├── tree.txt
+└── tsconfig.json
+
+15 directories, 13 files
