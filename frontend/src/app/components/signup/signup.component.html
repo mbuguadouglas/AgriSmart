@@ -1,35 +1,42 @@
-<div class="signup-container">
-    <div class="signup-background">
-      <div class="signup-content">
-        <h2>Join AgriSmart</h2>
-        <form [formGroup]="signupForm" (ngSubmit)="onSignup()">
-          <div class="form-group">
-            <label for="signup-username">Username</label>
-            <input id="signup-username" type="text" formControlName="username" placeholder="Enter your username" />
-          </div>
-  
-          <div class="form-group">
-            <label for="signup-email">Email</label>
-            <input id="signup-email" type="email" formControlName="email" placeholder="Enter your email" />
-          </div>
-  
-          <div class="form-group">
-            <label for="signup-password">Password</label>
-            <input id="signup-password" type="password" formControlName="password" placeholder="Enter your password" />
-          </div>
-  
-          <div class="form-group">
-            <label for="signup-role">Select Your Role</label>
-            <select id="signup-role" formControlName="role">
-              <option value="farmer">Farmer</option>
-              <option value="farmExpert">Farm Expert</option>
-              <option value="consumer">Consumer/Buyer</option>
-            </select>
-          </div>
-  
-          <button type="submit" [disabled]="signupForm.invalid">Sign Up</button>
-        </form>
+<div class="container">
+
+  <div class="background">
+    <h2> signup form </h2>
+    <form>
+      
+      <div class="form-group">
+        <label for="name"> username </label>
+        <input type="text" name="name">
       </div>
-    </div>
+      
+      
+      <div class="form-group">
+        <label for="email"> email </label>
+        <input type="email" name="email">
+      </div>
+
+
+      <div class="form-group">
+        <label for="password"> password </label>
+        <input type="password" name="password">
+      </div>
+
+      <div class="form-group">
+        <label for="role"> Select a role </label>
+        <section>
+          <input type="radio" name="role" value="farmer"> Farmer
+          <input type="radio" name="role" value="buyer"> Buyer  
+        </section>
+      </div>
+
+      <div class="form-group">
+        <button> signup </button>
+        <section>
+          Already have an account? <a href="#"> login </a> instead.
+        </section>
+      </div>
+
+    </form>
+
   </div>
-  
+</div>
