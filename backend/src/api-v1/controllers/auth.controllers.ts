@@ -17,7 +17,7 @@ export async function registerUser(request:Request, response:Response) {
 
     try {
         if (error) {
-            // return response.status(400).send(error.details)
+            // return response.status(400).send(error.details)  -> troubeshoot error messages
             return response.status(400).send(error.details[0].message)
         } else {
             const hashedPassword = await bcrypt.hash(password, 9)

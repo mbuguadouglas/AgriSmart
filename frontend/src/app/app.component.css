@@ -25,7 +25,7 @@
 
 /* Main Content Area */
 .main-content {
-    padding: 20px;
+    /* padding: 20px; */
     transition: margin-left 0.3s ease;
     background-color: #cfd7d4; /* Light background for the content area */
     min-height: calc(100vh - 80px); /* Ensure content area covers full height */
@@ -108,9 +108,9 @@
         top: 50px; /* Adjust if header height changes */
     }
 
-    .main-content {
-        margin-top: 70px; /* Adjust according to header height */
-    }
+    /* .main-content {
+        margin-top: 70px; Adjust according to header height
+    } */
 }
 
 /* Mobile Devices */
@@ -132,10 +132,10 @@
         position: static; /* Sidebar scrolls with content on small screens */
     }
 
-    .main-content {
-        margin-top: 60px; /* Adjust according to header height */
+    /* .main-content {
+        margin-top: 60px; Adjust according to header height
         padding: 15px;
-    }
+    } */
 
     .sidebar-title {
         font-size: 1.5em;
