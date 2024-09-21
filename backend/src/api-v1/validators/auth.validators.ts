@@ -24,15 +24,10 @@ export const registerSchema = Joi.object ({
         'any.required' : 'Password is required',
         'string.pattern.base': 'Password must contain at least one lowercase letter, one uppercase letter, one digit, and one special character',
     }),
-    // role : Joi.string().required().messages({
-    //     'string.base' : 'Role should be of type text',
-    //     'string.empty' : 'Role is required',
-    //     'any.required' : 'Role is required',
-    // }),
+
     role : Joi.string().required().valid('farmer', 'buyer').messages({
         'string.base' : 'Role should be of type text',
-        'string.empty' : 'Role is required',
         'any.required' : 'Role is required',
-        'string.valid' : 'weka choices ziko umbwa'
+        'any.only' : 'Role can either be a farmer or a buyer'
     }),
 })

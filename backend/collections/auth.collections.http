@@ -4,8 +4,8 @@ POST http://localhost:4000/auth/register
 Content-Type : application/json
 
 {
-    "name" : "Admin",
-    "email" : "admin@gmail.com",
+    "name" : "Lancelot",
+    "email" : "lancelot@gmail.com",
     "password" : "Qwerty12!",
-    "role" : "admin"
+    "role" : "buyer"
 }
