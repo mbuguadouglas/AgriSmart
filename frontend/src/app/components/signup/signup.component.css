@@ -49,6 +49,7 @@
   padding: 0 .1rem 0 .5rem; /*top right bottom left*/
 }
 
+
 .form-group input::placeholder {
   color: #fff;
   font-weight: bold;
@@ -129,18 +130,23 @@
   text-decoration: underline;
 }
 
-/* display of error messages within DOM */
-/* .form span.ng-touched.ng-invalid {
-  border: 2pc solid red;
-} */
 
 .error-msg {
-  font-size: small;
+  font-size: x-small;
   font-style: italic;
-  color: red;
+  color: rgb(197, 47, 47);
   margin: 0;
   margin-left: 5%;
+
 }
+
+
+/* .form-group input.error-msg{
+  Trying to lock the error messages such that when an input has an error
+  it will be displayed on the entire form input, not just in the text
+  border: 2px solid red !important;
+} */
+
 
 /* making the page responsive */
 @media (max-width: 576px) {
@@ -150,31 +156,31 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  /* Styles for landscape phones */
+/* @media (min-width: 576px) and (max-width: 767px) {
+  Styles for landscape phones
   .container {
     background-color: yellow;
   }
 
-}
+} */
 
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Styles for tablets */
+/* @media (min-width: 768px) and (max-width: 991px) {
+  Styles for tablets
   .container {
     background-color: green;
   }
 
-}
+} */
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* Styles for laptops */
+/* @media (min-width: 992px) and (max-width: 1199px) {
+  Styles for laptops
   .container {
     background-color: purple;
   }
 
-}
+} */
 
-/* @media (min-width: 1200px) {
+ /* @media (min-width: 1200px) {
   Styles for desktops
   .container {
     background-color: sandybrown;
