@@ -5,12 +5,12 @@ body {
     padding: 0;
     margin: 0;
     color: #333; /* Dark text for good readability */
-    font-family: Arial, sans-serif; /* Clean, modern font */
+    font-family: Arial, sans-serif; 
     /* background-color:rgb(125, 160, 189); */
 
 }
 
-/* Ensure that all elements fit within the viewport */
+
 html, body {
     height: 100%;
     overflow-x: hidden; /* Prevent horizontal scroll */
